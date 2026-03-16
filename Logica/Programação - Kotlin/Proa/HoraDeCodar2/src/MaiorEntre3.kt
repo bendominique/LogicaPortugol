@@ -6,8 +6,12 @@ fun main(){
 
     if(numeros[1] == numeros[0] || numeros[2] == numeros[1] || numeros[0] == numeros[2]){
         print("Não podem haver números repetidos!!")
-    }else print("o maior número é: " + maiorEntre3 )
-
+    }else print("o maior número é: " + maiorEntre3)
+    
+    numeros.sort()
+    val primeiroMaior = numeros[2]
+    val segundoMaior = numeros[1]
+    print(segundoMaior + primeiroMaior)
 }
 
 
